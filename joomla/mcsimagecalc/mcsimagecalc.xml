@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>mr.mcs Imageresizer plugin</name>
+	<version>0.1</version>
+	<author>Markus Schmucker</author>
+	<authorEmail>m.schmucker@mrnetgroup.com</authorEmail>
+	<description>Recalculates image dimensions</description>
+	<files>
+		<filename plugin="mcsimagecalc">mcsimagecalc.php</filename>
+	</files>
+	<params>
+		<param name="removeimages" type="radio" default="0" label="Remove all images" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="checkimageswithoutsize" type="radio" default="1" label="Add size to images without explicit size data" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="donthandleotherservers" type="radio" default="1" label="Don't handle other servers" description="Don't recalculate images originating from a different server">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="stripattributes" type="radio" default="1" label="Strip attributes" description="Strips attributes from image tags except of a small subset">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="cssstopclass" type="text" default="" label="CSS stop class" description="Don't handle images with this class" size="20" />
+		<param name="urlregexstop" type="text" default="" label="Don't handle images from URL" description="A regular expression for images that should not be handled" size="20" />
+	</params>
+</install>
