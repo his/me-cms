@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>mr.mcs Wurfl plugin</name>
+	<version>0.1</version>
+	<author>Markus Schmucker</author>
+	<authorEmail>m.schmucker@mrnetgroup.com</authorEmail>
+	<description>Puts Wurfl data into the session</description>
+	<files>
+		<filename plugin="mcswurfl">mcswurfl.php</filename>
+		<filename>./wurfl/check_wurfl.php</filename>
+		<filename>./wurfl/data/wurfl.xml</filename>
+		<filename>./wurfl/data/web_browsers_patch.xml</filename>
+		<filename>./wurfl/readme.txt</filename>
+		<filename>./wurfl/update_cache.php</filename>
+		<filename>./wurfl/wurfl_class.php</filename>
+		<filename>./wurfl/wurfl_config.php</filename>
+		<filename>./wurfl/wurfl_parser.php</filename>
+	</files>
+	<params>
+		<param name="refreshAlways" type="radio" default="0" label="Cache Strategy" description="Denotes if the capability data should be cached">
+			<option value="0">Store in session</option>
+			<option value="1">Refresh for every request</option>
+		</param>
+	</params>
+
+</install>

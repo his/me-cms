@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>mr.mcs Content plugin</name>
+	<version>0.1</version>
+	<author>Markus Schmucker</author>
+	<authorEmail>m.schmucker@mrnetgroup.com</authorEmail>
+	<description>Strips non-mobile content from the generated content</description>
+	<files>
+		<filename plugin="mcscontent">mcscontent.php</filename>
+	</files>
+	<params>
+		<param name="onlyonmobile" type="radio" default="1" label="Run only for mobile devices" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="removetables" type="radio" default="1" label="Remove tables" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="removeiframes" type="radio" default="1" label="Remove iframes" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="removeobjects" type="radio" default="1" label="Remove objects (like flash)" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="removeapplets" type="radio" default="1" label="Remove applets" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="removescript" type="radio" default="1" label="Remove JavaScript" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>
