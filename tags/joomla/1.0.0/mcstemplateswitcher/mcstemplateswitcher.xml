@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>mr.mcs Templateswitcher plugin</name>
+	<version>0.1</version>
+	<author>Markus Schmucker</author>
+	<authorEmail>m.schmucker@mrnetgroup.com</authorEmail>
+	<description>Switches the template to one of four dependent on device capabilites</description>
+	<files>
+		<filename plugin="mcstemplateswitcher">mcstemplateswitcher.php</filename>
+	</files>
+	<params>
+		<param type="spacer" default="Default Template" />
+		<param name="templateDefault" type="text" default="" label="Default template" description="Template for other devices" size="20" />
+
+		<param type="spacer" default="Mobile Templates" />
+		<param name="templateLandscape" type="text" default="" label="Landscape template" description="Template for mobile devices where width larger than height" size="20" />
+		<param name="templatePortrait" type="text" default="" label="Portrait template" description="Template for mobile devices where height larger than width" size="20" />
+		<param name="templateSmall" type="text" default="" label="Small template" description="Template for mobile devices with small screen where height or width are smaller than the small size value" size="20" />
+		<param name="smallSize" type="text" default="128" label="Small size" description="The maximum size for a small screen" size="3" />
+
+		<param type="spacer" default="Special Templates" />
+		<param name="uaRegex1" type="text" default="" label="Regex for Client (1)" description="Regular expression to test the client's user agent for" size="20" />
+		<param name="reTemplate1" type="text" default="" label="Template for Client (1)" description="Template to use if the regex matched" size="20" />
+		<param name="uaRegex2" type="text" default="" label="Regex for Client (2)" description="Regular expression to test the client's user agent for" size="20" />
+		<param name="reTemplate2" type="text" default="" label="Template for Client (2)" description="Template to use if the regex matched" size="20" />
+		<param name="uaRegex3" type="text" default="" label="Regex for Client (3)" description="Regular expression to test the client's user agent for" size="20" />
+		<param name="reTemplate3" type="text" default="" label="Template for Client (3)" description="Template to use if the regex matched" size="20" />
+	</params>
+</install>

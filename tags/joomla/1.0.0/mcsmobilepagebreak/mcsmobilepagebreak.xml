@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>mr.mcs Mobilepagebreak</name>
+	<author>Joomla! Project</author>
+	<creationDate>November 2005</creationDate>
+	<copyright>Copyright (C) 2005 - 2008 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.5</version>
+	<description>Renders the mobile pagebreak. A (mostly stripped down) variant of the normal pagebreak plugin.</description>
+	<files>
+		<filename plugin="mcsmobilepagebreak">mcsmobilepagebreak.php</filename>
+	</files>
+	<params>
+		<param name="enabled" type="radio" default="1" label="Enable Plugin" description="If enabled, the plugin will render pagebreaks in article view. If disabled, the pagebreak markers will be stripped.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showall" type="radio" default="1" label="Show All link" description="Show a Show All link.">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+	</params>
+</install>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>mr.mcs Remove Unsuitable Content plugin</name>
+	<version>0.1</version>
+	<author>Markus Schmucker</author>
+	<authorEmail>m.schmucker@mrnetgroup.com</authorEmail>
+	<description>Strips content which is either suitable only for mobile phones or content that is not suitable from the generated content, based on css classes.</description>
+	<files>
+		<filename plugin="mcsremoveunsuitable">mcsremoveunsuitable.php</filename>
+		<filename>simple_html_dom.php</filename>
+	</files>
+	<params>
+		<param name="stripcssclass" type="text" default="" label="CSS class for mobile unsuitable content" description="The CSS class for content to be removed for mobile devices" size="20" />
+		<param name="onlyformobile" type="text" default="" label="CSS class for mobile only content" description="The CSS class for content to be removed for non-mobile devices" size="20" />
+	</params>
+</install>
