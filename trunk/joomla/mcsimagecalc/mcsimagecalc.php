@@ -1,7 +1,10 @@
 <?php
 
-/*
+/**
  * Plugin for the resizing of images.
+ * @author		mr. mcs GmbH
+ * @copyright	Copyright (C) 2009 - 2010 mr. mcs GmbH.
+ * @license		GNU/GPL v2, see LICENSE.php
  */
 
 defined( '_JEXEC' ) or die( 'Restricted access' );

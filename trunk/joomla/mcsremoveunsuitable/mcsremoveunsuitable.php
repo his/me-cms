@@ -1,11 +1,14 @@
 <?php
 
-/*
+/**
  * Removes content with a specific css class from the generated content.
  *
  * Uses the Simple Html DOM from http://sourceforge.net/projects/simplehtmldom/
  * (MIT-License, see simple_html_dom.php)
  *
+ * @author		mr. mcs GmbH
+ * @copyright	Copyright (C) 2009 - 2010 mr. mcs GmbH.
+ * @license		GNU/GPL v2, see LICENSE.php
  */
 
 defined( '_JEXEC' ) or die( 'Restricted access' );
