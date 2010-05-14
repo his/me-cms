@@ -1,10 +1,13 @@
 <?php
 
-/*
+/**
  * Plugin für die Wurfl-Abfrage.
  *
  * Falls die Daten noch nicht in der Session liegen oder ein Auffrischen bei jedem
  * Request gewünscht ist, werden die Wurfl-Daten in die Session eingef�gt.
+ * @author		mr. mcs GmbH
+ * @copyright	Copyright (C) 2009 - 2010 mr. mcs GmbH.
+ * @license		GNU/GPL v2, see LICENSE.php
  */
 
 defined( '_JEXEC' ) or die( 'Restricted access' );
